@@ -18,7 +18,6 @@ public class Circle {
     }
 
     public String toString(){
-        System.out.printf("Радиус: %f\nЦвет: %s\nПлощадь: %f\nПериметр: %f",radius,color,area(),perimeter());
-        return null;
+        return "Радиус: " + radius + "\nЦвет: "+ color+"\nПлощадь: "+area()+"\nПериметр: "+perimeter();
     }
 }

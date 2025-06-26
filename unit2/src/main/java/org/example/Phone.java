@@ -44,7 +44,6 @@ public class Phone {
     }
 
     public String toString() {
-        System.out.printf("Номер: %s\nМодель: %s\nВес: %f", number, model, weight);
-        return null;
+        return "Номер: "+number+"\nМодель: "+model+"\nВес: "+ weight;
     }
 }

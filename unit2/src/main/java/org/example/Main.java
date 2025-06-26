@@ -11,13 +11,13 @@ public class Main {
         phone1.recieveCall("Анастасия");
         System.out.println("Номер phone2: "+phone2.getNumber());
         Phone.sendMessage();
-        phone1.toString();
+        System.out.println(phone1);
 
         System.out.println("\n\n");
 
         //Задание 2
         Circle circle1 = new Circle(5,"Красный");
-        circle1.toString();
+        System.out.println(circle1);
 
         System.out.println("\n\n");
 
