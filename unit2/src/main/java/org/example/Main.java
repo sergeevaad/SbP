@@ -1,22 +1,22 @@
 package org.example;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         //Задание 1
-        Phone phone1 = new Phone("89000000000","Sam",0.209);
-        Phone phone2 = new Phone("89111111111","Sam");
+        Phone phone1 = new Phone("89000000000", "Sam", 0.209);
+        Phone phone2 = new Phone("89111111111", "Sam");
         Phone phone3 = new Phone();
 
         phone1.recieveCall("Анастасия");
-        System.out.println("Номер phone2: "+phone2.getNumber());
+        System.out.println("Номер phone2: " + phone2.getNumber());
         Phone.sendMessage();
         System.out.println(phone1);
 
         System.out.println("\n\n");
 
         //Задание 2
-        Circle circle1 = new Circle(5,"Красный");
+        Circle circle1 = new Circle(5, "Красный");
         System.out.println(circle1);
 
         System.out.println("\n\n");
@@ -62,7 +62,7 @@ public class Main {
         System.out.println("\n\n");
 
         //Задание 4
-        Author author1 = new Author("J.K.Rowling","F","jkrowling@gmail.com");
+        Author author1 = new Author("J.K.Rowling", "F", "jkrowling@gmail.com");
         Author author2 = new Author();
 
         author2.setName("Шилдт Герберт");
@@ -77,7 +77,7 @@ public class Main {
 
         System.out.println();
 
-        Book book1 = new Book("Harry Potter and Philosopher's Stone",author1,1997);
+        Book book1 = new Book("Harry Potter and Philosopher's Stone", author1, 1997);
         Book book2 = new Book();
 
         book2.setTitle("Java. Полное руководствоб, 12-е издание");
@@ -90,6 +90,20 @@ public class Main {
         System.out.println(book1.getYear());
 
         System.out.println(book2);
+
+        System.out.println("\n\n");
+
+        //Задание 5
+        PizzaOrder order1 = new PizzaOrder("Аль-Капчоне", PizzaSize.BIG, true, "Ярославская, 101");
+        PizzaOrder order2 = new PizzaOrder("Пеперони", PizzaSize.MEDIUM, false, "Ленинградская, 40б");
+
+        order1.order();
+        order1.order();
+
+        order2.cancel();
+        order1.cancel();
+
+        System.out.println(order1);
 
     }
 }
