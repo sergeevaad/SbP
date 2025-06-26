@@ -11,5 +11,9 @@ public class Main {
         Phone.sendMessage();
         phone1.toString();
 
+        System.out.println("\n\n");
+
+        Circle circle1 = new Circle(5,"Красный");
+        circle1.toString();
     }
 }
