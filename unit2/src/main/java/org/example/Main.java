@@ -59,5 +59,37 @@ public class Main {
         System.out.println("\nУмножение двух матриц");
         Matrix.print(matrix1.multMat(matrix2));
 
+        System.out.println("\n\n");
+
+        //Задание 4
+        Author author1 = new Author("J.K.Rowling","F","jkrowling@gmail.com");
+        Author author2 = new Author();
+
+        author2.setName("Шилдт Герберт");
+        author2.setGender("M");
+        author2.setEmail("herbertschildt@gmail.com");
+
+        System.out.println(author1.getName());
+        System.out.println(author1.getGender());
+        System.out.println(author1.getEmail());
+
+        System.out.println(author2);
+
+        System.out.println();
+
+        Book book1 = new Book("Harry Potter and Philosopher's Stone",author1,1997);
+        Book book2 = new Book();
+
+        book2.setTitle("Java. Полное руководствоб, 12-е издание");
+        book2.setAuthor(author2);
+        book2.setYear(2022);
+
+
+        System.out.println(book1.getTitle());
+        System.out.println(book1.getAuthor());
+        System.out.println(book1.getYear());
+
+        System.out.println(book2);
+
     }
 }
