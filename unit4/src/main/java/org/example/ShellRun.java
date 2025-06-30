@@ -15,10 +15,6 @@ public class ShellRun {
                 continue;
             }
 
-            if (shell.isExit(input)) {
-                return;
-            }
-
             shell.executeCmd(input);
         }
     }
