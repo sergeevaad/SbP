@@ -22,5 +22,4 @@ public class Shell {
             System.out.printf("Ошибка: неизвестная команда '%s'\n", commandName);
         }
     }
-    
 }
