@@ -10,6 +10,7 @@
         <module name="unit1" />
         <module name="unit2" />
         <module name="unit3" />
+        <module name="unit4" />
       </profile>
     </annotationProcessing>
   </component>

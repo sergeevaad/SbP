@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e47d292-2011-43ae-860e-9b86f762b620" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/unit4/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit4/src/main/java/org/example/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit4/src/main/java/org/example/Date.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit4/src/main/java/org/example/Exit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit4/src/main/java/org/example/Help.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit4/src/main/java/org/example/Pwd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit4/src/main/java/org/example/Shell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit4/src/main/java/org/example/ShellRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit4/src/main/java/org/example/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unit2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/unit2/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unit2/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/unit2/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unit2/src/main/java/org/example/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/unit2/src/main/java/org/example/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit3/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +62,14 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.PaintExample.executor": "Run",
+    "Application.ShellRun.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/SaD/Documents/GitHub/SbP",
-    "onboarding.tips.debug.path": "C:/Users/SaD/Documents/GitHub/SbP/unit3/src/main/java/org/example/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/SaD/Documents/GitHub/SbP/unit4/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
