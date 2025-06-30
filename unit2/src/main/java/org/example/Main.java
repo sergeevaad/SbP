@@ -4,13 +4,15 @@ public class Main {
     public static void main(String[] args) {
 
         //Задание 1
-        Phone phone1 = new Phone("89000000000", "Sam", 0.209);
-        Phone phone2 = new Phone("89111111111", "Sam");
+        PhoneManager manager = new PhoneManager();
+
+        Phone phone1 = new Phone("89000000000", "Sam", 0.209,manager);
+        Phone phone2 = new Phone("89111111111", "Sam",manager);
         Phone phone3 = new Phone();
 
-        phone1.recieveCall("Анастасия");
+        phone1.receiveCall("Анастасия");
         System.out.println("Номер phone2: " + phone2.getNumber());
-        Phone.sendMessage();
+        phone1.sendMessage();
         System.out.println(phone1);
 
         System.out.println("\n\n");

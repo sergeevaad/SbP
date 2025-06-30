@@ -6,19 +6,20 @@ public class Phone {
     private String number;
     private String model;
     private double weight;
-    private static ArrayList<String> numbers = new ArrayList<>();
+    private PhoneManager phoneManager;
 
-    public Phone(String number, String model, double weight) {
+    public Phone(String number, String model, double weight, PhoneManager phoneManager) {
         this.number = number;
         this.model = model;
         this.weight = weight;
-        numbers.add(number);
+        this.phoneManager = phoneManager;
+        phoneManager.addNumber(number);
     }
 
-    public Phone(String number, String model) {
+    public Phone(String number, String model,PhoneManager phoneManager) {
         this.number = number;
         this.model = model;
-        numbers.add(number);
+        phoneManager.addNumber(number);
     }
 
     public Phone() {
@@ -29,7 +30,7 @@ public class Phone {
 
     }
 
-    public void recieveCall(String name) {
+    public void receiveCall(String name) {
         System.out.printf("Звонит %s\n", name);
     }
 
@@ -37,8 +38,8 @@ public class Phone {
         return number;
     }
 
-    public static void sendMessage() {
-        for (String number: numbers){
+    public void sendMessage() {
+        for (String number: phoneManager.getNumbers()){
             System.out.println(number);
         }
     }
