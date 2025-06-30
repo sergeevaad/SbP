@@ -22,8 +22,5 @@ public class Shell {
             System.out.printf("Ошибка: неизвестная команда '%s'\n", commandName);
         }
     }
-
-    public boolean isExit(String commandName) {
-        return "exit".equals(commandName);
-    }
+    
 }
