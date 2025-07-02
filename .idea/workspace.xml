@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e47d292-2011-43ae-860e-9b86f762b620" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/unit5_1/src/test/java/org/example/LListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit5_2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit5_2/src/main/java/org/example/LListG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit5_2/src/test/java/org/example/LListGTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit5_1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/unit5_1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit5_1/src/main/java/org/example/LList.java" beforeDir="false" afterPath="$PROJECT_DIR$/unit5_1/src/main/java/org/example/LList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit5_1/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit5_1/target/classes/org/example/LList.class" beforeDir="false" afterPath="$PROJECT_DIR$/unit5_1/target/classes/org/example/LList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit5_1/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit5_2/src/test/java/org/example/LListGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unit5_2/src/test/java/org/example/LListGTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +55,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.LListGTest.executor": "Run",
     "TestNG.LListTest.add.executor": "Run",
     "TestNG.LListTest.addFirstTest.executor": "Run",
     "TestNG.LListTest.addTest.executor": "Run",
@@ -94,7 +84,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LListTest.testRemoveByIndexOutOfBoundsNegative">
+  <component name="RunManager">
     <configuration name="LListTest.removeLastTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="unit5_1" />
       <extension name="coverage">

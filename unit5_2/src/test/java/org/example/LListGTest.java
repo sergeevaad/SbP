@@ -31,7 +31,7 @@ public class LListGTest {
 
         assertEquals(list.get(0), "A");
         assertEquals(list.get(1), "AB");
-        assertEquals(list.get(2), "C");
+        assertEquals(list.get(2), "B");
     }
 
     @Test(expectedExceptions = IndexOutOfBoundsException.class)
@@ -146,5 +146,16 @@ public class LListGTest {
         assertEquals(list.size(), 0);
         assertFalse(list.contains("A"));
         assertFalse(list.contains("B"));
+    }
+
+    @Test
+    public void integerTest() {
+        LListG<Integer> intList = new LListG<>();
+        intList.add(1);
+        intList.add(2);
+        intList.add(3);
+        assertEquals(intList.get(0),1);
+        assertEquals(intList.get(1), 2);
+        assertEquals(intList.get(2), 3);
     }
 }
