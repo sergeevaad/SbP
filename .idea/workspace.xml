@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e47d292-2011-43ae-860e-9b86f762b620" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/unit5_4/src/main/java/org/example/ITextProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit5_2/src/test/java/org/example/LListGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unit5_2/src/test/java/org/example/LListGTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="TestNG Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,6 +54,7 @@
     "Application.Main.executor": "Run",
     "Application.PaintExample.executor": "Run",
     "Application.ShellRun.executor": "Run",
+    "Maven.unit6 [clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
@@ -65,12 +70,13 @@
     "TestNG.LListTest.testAddAtIndexOutOfBounds.executor": "Run",
     "TestNG.LListTest.testRemoveByIndexOutOfBoundsNegative.executor": "Run",
     "TestNG.LListTest.testRemoveFromEmptyList.executor": "Run",
+    "TestNG.SwapMapTest.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "TestNG",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG": "",
     "git-widget-placeholder": "main",
     "last_directory_selection": "C:/Users/SaD/Documents/GitHub/SbP/unit5_1/src/main/java/org/example",
     "last_opened_file_path": "C:/Users/SaD/Documents/GitHub/SbP",
-    "onboarding.tips.debug.path": "C:/Users/SaD/Documents/GitHub/SbP/unit5_2/src/main/java/org/example/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/SaD/Documents/GitHub/SbP/unit6/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -177,10 +183,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LListTest.removeLastTest" />
         <item itemvalue="TestNG.LListTest.testRemoveByIndexOutOfBoundsNegative" />
         <item itemvalue="TestNG.LListTest.testRemoveFromEmptyList" />
         <item itemvalue="TestNG.LListTest.testAddAtIndexOutOfBounds" />
-        <item itemvalue="TestNG.LListTest.removeLastTest" />
         <item itemvalue="TestNG.LListTest.removeTest" />
       </list>
     </recent_temporary>
