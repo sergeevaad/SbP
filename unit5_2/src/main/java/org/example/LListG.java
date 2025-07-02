@@ -2,25 +2,25 @@ package org.example;
 
 import java.util.NoSuchElementException;
 
-public class LList {
-    private Node head;
+public class LListG<T> {
+    private Node<T> head;
     private int size;
 
-    class Node{
-        Node next;
-        Object val;
+    class Node<T>{
+        Node<T> next;
+        T val;
 
-        public Node(Object val){
+        public Node(T val){
             this.val=val;
         }
     }
 
-    public void add(Object val){
-        Node node = new Node(val);
+    public void add(T val){
+        Node<T> node = new Node<>(val);
         if (head==null){
             head = node;
         }else {
-            Node curNode = head;
+            Node<T> curNode = head;
             while (curNode.next!=null){
                 curNode = curNode.next;
             }
@@ -29,7 +29,7 @@ public class LList {
         size++;
     }
 
-    public void add(int index, Object val){
+    public void add(int index, T val){
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
@@ -38,8 +38,8 @@ public class LList {
         } else if (index == size) {
             add(val);
         } else {
-            Node node = new Node(val);
-            Node prev = head;
+            Node<T> node = new Node<>(val);
+            Node<T> prev = head;
 
             for (int i = 0; i < index - 1; i++) {
                 prev = prev.next;
@@ -51,14 +51,14 @@ public class LList {
         }
     }
 
-    public void addFirst(Object val){
-        Node node = new Node(val);
+    public void addFirst(T val){
+        Node<T> node = new Node<>(val);
         node.next = head;
         head = node;
         size++;
     }
 
-    public void remove(Object val){
+    public void remove(T val){
         if (head == null) {
             throw new NoSuchElementException("List is empty");
         }
@@ -67,7 +67,7 @@ public class LList {
             size--;
         }
 
-        Node node = head;
+        Node<T> node = head;
         while (node.next != null) {
             if (node.next.val.equals(val)) {
                 node.next = node.next.next;
@@ -86,7 +86,7 @@ public class LList {
             size--;
         }
 
-        Node node = head;
+        Node<T> node = head;
         for (int i = 0; i < index - 1; i++) {
             node = node.next;
         }
@@ -106,7 +106,7 @@ public class LList {
         if (head == null) {
             throw new NoSuchElementException("List is empty");
         }
-        Node node = head;
+        Node<T> node = head;
         while (node.next.next != null) {
             node = node.next;
         }
@@ -114,22 +114,22 @@ public class LList {
         size--;
     }
 
-    public Object get(int index){
+    public T get(int index){
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
-        Node node = head;
+        Node<T> node = head;
         for (int i = 0; i < index; i++) {
             node = node.next;
         }
         return node.val;
     }
 
-    public void set(int index, Object val){
+    public void set(int index, T val){
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
-        Node node = head;
+        Node<T> node = head;
         for (int i = 0; i < index; i++) {
             node = node.next;
         }
@@ -140,8 +140,8 @@ public class LList {
         return size;
     }
 
-    public boolean contains(Object val){
-        Node node = head;
+    public boolean contains(T val){
+        Node<T> node = head;
         while (node != null) {
             if (node.val.equals(val)) {
                 return true;
@@ -155,7 +155,4 @@ public class LList {
         head = null;
         size=0;
     }
-
-
-
 }
