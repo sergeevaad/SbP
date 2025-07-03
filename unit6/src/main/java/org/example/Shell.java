@@ -1,31 +1,51 @@
 package org.example;
 
-import org.reflections.Reflections;
-
+import java.io.File;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class Shell {
     private Map<String, Command> commands = new HashMap<>();
 
     public Shell() {
-        Reflections reflections = new Reflections("org.example");
-        Set<Class<?>> commandClasses = reflections.getTypesAnnotatedWith(CommandInfo.class);
-        for (Class<?> clazz : commandClasses) {
-            try {
-                CommandInfo info = clazz.getAnnotation(CommandInfo.class);
-                String commandName = info.name();
+        findCommands();
+    }
 
-                if (clazz == Help.class) {
-                    commands.put(commandName, new Help(commands));
-                } else {
-                    Command command = (Command) clazz.getConstructor().newInstance();
-                    commands.put(commandName, command);
-                }
-            } catch (Exception e) {
-                System.err.println("Ошибка при создании команды " + clazz.getSimpleName() + ": " + e.getMessage());
+    private void findCommands(){
+        String packageName = "org.example";
+        String packagePath = packageName.replace('.', '/');
+        URL packageUrl = getClass().getClassLoader().getResource(packagePath);
+
+        if (packageUrl == null) {
+            System.err.println("Package not found: " + packageName);
+            return;
+        }
+
+        File packageDir = new File(packageUrl.getFile());
+        File[] classFiles = packageDir.listFiles((dir, name) -> name.endsWith(".class"));
+
+        if (classFiles != null) {
+            for (File file : classFiles) {
+                String className = packageName + '.' + file.getName().replace(".class", "");
+                registerCommand(className);
             }
+        }
+    }
+
+
+    private void registerCommand(String className) {
+        try {
+            Class<?> clazz = Class.forName(className);
+            CommandInfo info = clazz.getAnnotation(CommandInfo.class);
+
+            if (info != null && !clazz.equals(Help.class)) {
+                commands.put(info.name(), (Command) clazz.getConstructor().newInstance());
+            }else if (info != null){
+                commands.put(info.name(), new Help(commands));
+            }
+        } catch (Exception e) {
+            System.err.println("Ошибка при регистрации команды: " + className);
         }
     }
 
