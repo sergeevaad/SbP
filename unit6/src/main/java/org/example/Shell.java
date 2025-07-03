@@ -18,7 +18,7 @@ public class Shell {
         URL packageUrl = getClass().getClassLoader().getResource(packagePath);
 
         if (packageUrl == null) {
-            System.err.println("Package not found: " + packageName);
+            System.out.println("Package not found: " + packageName);
             return;
         }
 
@@ -45,7 +45,7 @@ public class Shell {
                 commands.put(info.name(), new Help(commands));
             }
         } catch (Exception e) {
-            System.err.println("Ошибка при регистрации команды: " + className);
+            System.out.println("Ошибка при регистрации команды: " + className);
         }
     }
 
