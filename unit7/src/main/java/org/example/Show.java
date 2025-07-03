@@ -23,7 +23,7 @@ public class Show implements Command {
             }
 
         } catch (SQLException e) {
-            System.err.println("Ошибка при получении задач: " + e.getMessage());
+            System.out.println("Ошибка при получении задач: " + e.getMessage());
         }
     }
 
