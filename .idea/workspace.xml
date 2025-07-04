@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e47d292-2011-43ae-860e-9b86f762b620" name="Changes" comment="" />
+    <list default="true" id="7e47d292-2011-43ae-860e-9b86f762b620" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit5_1/src/main/java/org/example/LList.java" beforeDir="false" afterPath="$PROJECT_DIR$/unit5_1/src/main/java/org/example/LList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit5_4/src/main/java/org/example/ResPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/unit5_4/src/main/java/org/example/ResPrint.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,45 +47,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.PaintExample.executor": "Run",
-    "Application.ShellRun.executor": "Run",
-    "Application.ToDoRun.executor": "Run",
-    "Maven.unit5_1 [clean].executor": "Run",
-    "Maven.unit5_2 [clean].executor": "Run",
-    "Maven.unit5_3 [clean].executor": "Run",
-    "Maven.unit5_4 [clean].executor": "Run",
-    "Maven.unit6 [clean].executor": "Run",
-    "Maven.unit7 [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.LListGTest.executor": "Run",
-    "TestNG.LListTest.add.executor": "Run",
-    "TestNG.LListTest.addFirstTest.executor": "Run",
-    "TestNG.LListTest.addTest.executor": "Run",
-    "TestNG.LListTest.executor": "Run",
-    "TestNG.LListTest.removeLastTest.executor": "Run",
-    "TestNG.LListTest.removeTest.executor": "Run",
-    "TestNG.LListTest.testAddAtIndexOutOfBounds.executor": "Run",
-    "TestNG.LListTest.testRemoveByIndexOutOfBoundsNegative.executor": "Run",
-    "TestNG.LListTest.testRemoveFromEmptyList.executor": "Run",
-    "TestNG.SwapMapTest.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "TestNG",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG": "",
-    "git-widget-placeholder": "main",
-    "last_directory_selection": "C:/Users/SaD/Documents/GitHub/SbP/unit5_1/src/main/java/org/example",
-    "last_opened_file_path": "C:/Users/SaD/Documents/GitHub/SbP",
-    "onboarding.tips.debug.path": "C:/Users/SaD/Documents/GitHub/SbP/unit7/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PaintExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShellRun.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ToDoRun.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.unit5_1 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.unit5_2 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.unit5_3 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.unit5_4 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.unit6 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.unit7 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.LListGTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LListTest.add.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LListTest.addFirstTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LListTest.addTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LListTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LListTest.removeLastTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LListTest.removeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LListTest.testAddAtIndexOutOfBounds.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LListTest.testRemoveByIndexOutOfBoundsNegative.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LListTest.testRemoveFromEmptyList.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SwapMapTest.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;TestNG&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/SaD/Documents/GitHub/SbP/unit5_1/src/main/java/org/example&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/SaD/Documents/GitHub/SbP&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/SaD/Documents/GitHub/SbP/unit7/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />

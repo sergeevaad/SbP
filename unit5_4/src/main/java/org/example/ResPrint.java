@@ -12,8 +12,8 @@ public class ResPrint {
 
     public void print() throws IOException {
         Map<String, Integer> wordCount = counter.count();
-        for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
+        wordCount.entrySet().stream()
+                .sorted(Map.Entry.<String,Integer>comparingByValue().reversed())
+                .forEach(System.out::println);
     }
 }

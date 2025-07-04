@@ -30,7 +30,7 @@ public class LList {
     }
 
     public void add(int index, Object val){
-        if (index < 0 || index >= size) {
+        if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
         if (index == 0) {
@@ -107,8 +107,12 @@ public class LList {
             throw new NoSuchElementException("List is empty");
         }
         Node node = head;
+        if (node.next==null){
+            removeFirst();
+        }else {
         while (node.next.next != null) {
             node = node.next;
+        }
         }
         node.next = null;
         size--;
